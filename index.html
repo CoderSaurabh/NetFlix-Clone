@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/netflix-logo.png" alt="Netflix Logo">
+            </div>
+            <div class="nav-links">
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <select>
+                        <option>English</option>
+                        <option>Español</option>
+                    </select>
+                </div>
+                <button class="sign-in-btn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-form">
+                <input type="email" placeholder="Email address">
+                <button>Get Started <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="content-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+            <div class="image-content">
+                <img src="images/tv.png" alt="TV">
+                <div class="video-container">
+                    <video autoplay playsinline muted loop>
+                        <source src="images/video-tv.m4v" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container reverse">
+            <div class="text-content">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favorites easily and always have something to watch.</p>
+            </div>
+            <div class="image-content">
+                <img src="images/mobile.jpg" alt="Mobile">
+                <div class="download-box">
+                    <img src="images/boxshot.png" alt="Stranger Things">
+                    <div class="download-text">
+                        <p>Stranger Things</p>
+                        <p>Downloading...</p>
+                    </div>
+                    <div class="download-icon"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="image-content">
+                <!-- This would be another video/image -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Rows -->
+    <section class="movie-section">
+        <h2>Popular on Netflix</h2>
+        <div class="movie-row">
+            <div class="movie-slider">
+                <div class="movie-slide">
+                    <div class="movie-card" data-movie-id="1">
+                        <img src="images/movie1.jpg" alt="Movie 1">
+                        <div class="movie-info">
+                            <h3>Stranger Things</h3>
+                            <p>2016 • TV Show • 4 Seasons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-slide">
+                    <div class="movie-card" data-movie-id="2">
+                        <img src="images/movie2.jpg" alt="Movie 2">
+                        <div class="movie-info">
+                            <h3>The Witcher</h3>
+                            <p>2019 • TV Show • 2 Seasons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-slide">
+                    <div class="movie-card" data-movie-id="3">
+                        <img src="images/movie3.jpg" alt="Movie 3">
+                        <div class="movie-info">
+                            <h3>Money Heist</h3>
+                            <p>2017 • TV Show • 5 Seasons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-slide">
+                    <div class="movie-card" data-movie-id="4">
+                        <img src="images/movie4.jpg" alt="Movie 4">
+                        <div class="movie-info">
+                            <h3>Breaking Bad</h3>
+                            <p>2008 • TV Show • 5 Seasons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-slide">
+                    <div class="movie-card" data-movie-id="5">
+                        <img src="images/movie5.jpg" alt="Movie 5">
+                        <div class="movie-info">
+                            <h3>The Queen's Gambit</h3>
+                            <p>2020 • TV Show • 1 Season</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-slide">
+                    <div class="movie-card" data-movie-id="6">
+                        <img src="images/movie6.jpg" alt="Movie 6">
+                        <div class="movie-info">
+                            <h3>Dark</h3>
+                            <p>2017 • TV Show • 3 Seasons</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- More rows can be added here -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What is Netflix?<i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                    <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How much does Netflix cost?<i class="fas fa-plus"></i></button>
+                <div class="faq-answer">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $9.99 to $19.99 a month. No extra costs, no contracts.</p>
+                </div>
+            </div>
+            <!-- More FAQ items can be added here -->
+        </div>
+        <div class="email-form">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="email" placeholder="Email address">
+            <button>Get Started <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Questions? Call 1-844-505-2993</p>
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Help Center</a>
+                <a href="#">Account</a>
+                <a href="#">Media Center</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Jobs</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Speed Test</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <select>
+                    <option>English</option>
+                    <option>Español</option>
+                </select>
+            </div>
+            <p>Netflix Clone</p>
+        </div>
+    </footer>
+
+    <!-- Movie Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-poster">
+                    <img src="" alt="Movie Poster" id="modalPoster">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDetails"></p>
+                    <p id="modalDescription"></p>
+                    <div class="modal-actions">
+                        <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+                        <button class="add-list-btn"><i class="fas fa-plus"></i> My List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
